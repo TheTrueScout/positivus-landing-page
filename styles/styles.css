@@ -33,7 +33,7 @@ h4 {
 
 p {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: #191A23;
 }
 
@@ -59,6 +59,10 @@ p {
 }
 .col-white {
   color: white;
+}
+
+.col-green {
+  color: #B9FF66;
 }
 
 .no-mg {
@@ -90,6 +94,9 @@ p {
 
 .fw-400 {
   font-weight: 400;
+}
+.no-wrap {
+  white-space: nowrap;
 }
 
 nav a {
@@ -289,6 +296,7 @@ nav {
   background-color: #F3F3F3;
   border-radius: 60px;
   padding: 60px;
+  margin-bottom: 100px;
 }
 
 .free-proposal-left {
@@ -309,4 +317,53 @@ nav {
   top: -50%;
   bottom: -50%;
   margin: auto;
+}
+
+  /* case studies */
+.case-studies {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 140px;
+}
+
+.case-studies-header {
+  display: flex;
+  gap: 40px;
+  width: 65%;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.case-studies-body {
+  display: flex;
+  background-color: #191A23;
+  padding: 70px 60px;
+  border-radius: 60px;
+}
+
+.body-text-container {
+  flex: 0.333;
+}
+
+.padding-left-right {
+  padding: 0 52px;
+}
+
+.padding-left {
+  padding-left: 52px;
+}
+
+.padding-right {
+  padding-right: 52px;
+}
+
+.border-left-right {
+  border: solid #F3F3F3;
+  border-width:  0 1px ;
+}
+
+.text-container-l2 {
+  display: flex;
+  align-items: center;
 }
