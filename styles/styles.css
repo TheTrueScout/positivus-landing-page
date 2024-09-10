@@ -479,6 +479,7 @@ nav {
 
 .process-l1-right-btn:has(input:checked) .vertical-cross {
   background-color: #00000000;
+  rotate: 90deg;
 }
 
 .horizontal-cross {
