@@ -10,31 +10,31 @@ body {
 h1 {
   font-size: 60px;
   font-weight: 500;
-  color: #191A23;
+  color: #000000;
 }
 
 h2 {
   font-size: 40px;
   font-weight: 500;
-  color: #191A23;
+  color: #000000;
 }
 
 h3 {
   font-size: 30px;
   font-weight: 500;
-  color: #191A23;
+  color: #000000;
 }
 
 h4 {
   font-size: 20px;
   font-weight: 500;
-  color: #191A23;
+  color: #000000;
 }
 
 p {
   font-size: 18px;
   font-weight: 400;
-  color: #191A23;
+  color: #000000;
 }
 
 .bg-B9FF66 {
@@ -101,7 +101,7 @@ p {
 
 nav a {
   text-decoration: none;
-  color: #191A23;
+  color: #000000;
   font-size: 20px;
   font-weight: 500;
 }
@@ -366,4 +366,153 @@ nav {
 .text-container-l2 {
   display: flex;
   align-items: center;
+}
+
+
+  /* Working Process */
+.working-process {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.working-process-header {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.working-process-items {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 30px;
+}
+
+.working-process-items input {
+  appearance: none;
+}
+
+.process-item-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 170px;
+  background-color: #F3F3F3;
+  padding: 41px 60px;
+  border-radius: 30px;
+  border: solid #191A23;
+  border-width: 1px 1px 8px 1px;
+  transition: 0.5s;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.process-item-container:has(input:checked) {
+  background-color: #B9FF66;
+  height: 274px;
+}
+
+.bg-B9FF66-only {
+  background-color: #B9FF66;
+}
+
+.process-item-l1 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.process-item-container:has(input:checked) .process-item-l1 {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+
+.process-item-l1::after {
+  position: absolute;
+  left: -50%;
+  right: -50%;
+  margin: auto;
+  content: '';
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  background-color: #191A23;
+  transition: 0.5s;
+}
+
+.process-item-container:has(input:checked) .process-item-l1::after {
+  width: 100%;
+}
+
+
+.process-l1-right-btn input {
+  appearance: none;
+}
+
+.process-l1-right-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  border: 1px solid #191A23;
+  background-color: #F3F3F3;
+  position: relative;
+}
+
+.vertical-cross {
+  width: 5px;
+  height: 20px;
+  position: absolute;
+  background-color: #000000;
+  left: -50%;
+  right: -50%;
+  top: -50%;
+  bottom: -50%;
+  margin: auto;
+  transition: 0.6s;
+}
+
+.process-l1-right-btn:has(input:checked) .vertical-cross {
+  background-color: #00000000;
+}
+
+.horizontal-cross {
+  width: 20px;
+  height: 5px;
+  position: absolute;
+  background-color: #000000;
+  left: -50%;
+  right: -50%;
+  top: -50%;
+  bottom: -50%;
+  margin: auto;
+}
+
+.process-item-l1-left {
+  display: flex;
+  flex: 0.7;
+  justify-content: left;
+  align-items: center;
+  gap: 25px;
+}
+
+.process-item-l1-right {
+  display: flex;
+  flex: 0.3;
+  justify-content: right;
+  align-items: center;
+}
+
+.process-item-l2 {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.process-item-container:has(input:checked) .process-item-l2 {
+  opacity: 1;
 }
