@@ -192,6 +192,121 @@ nav {
   height: auto;
 }
 
+/* front page svg animation */
+@keyframes jump1 {
+  
+0% { transform: translateY(-5px);}
+
+100% { transform: translateY(5px);}
+
+}
+
+#megaphone {
+  animation: jump1 ease-in-out 2s infinite alternate;
+}
+
+
+@keyframes jump2 { 
+
+  0% {
+   transform: translateY(5px);
+}
+100% {
+  transform: translateY(-5px);
+  
+}
+
+}
+
+#heart-icon {
+  animation: jump2 2s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes jump3 { 
+
+  0% {
+   transform: translateY(-8px);
+}
+100% {
+  transform: translateY(8px);
+  
+}
+
+}
+
+#play-icon {
+  animation: jump3 2s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+
+#share-icon {
+  animation: jump2 5s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes jump4 { /*  rings rotate ani  */
+
+  0% {
+    rotate: -1deg;
+}
+100% {
+  rotate: 1deg;
+}
+
+}
+
+#rings {
+  animation: jump4 3s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#small-green-ball {
+  animation: jump3 3s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes jump5 {
+  0% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+#black-ball {
+  animation: jump3 6s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#location-icon {
+  animation: jump2 4s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#big-diamond {
+  animation: jump5 4s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#small-diamond {
+  animation: jump1 3s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+
   /* sponsors logos */
 .sponsors {
   display: flex;
