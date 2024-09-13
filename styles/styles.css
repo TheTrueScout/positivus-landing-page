@@ -7,31 +7,31 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: clamp(43px, 5vw, 60px);
   font-weight: 500;
   color: #000000;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: clamp(36px, 4vw, 40px);
   font-weight: 500;
   color: #000000;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: clamp(26px, 3vw, 30px);
   font-weight: 500;
   color: #000000;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: clamp(18px, 2vw, 20px);
   font-weight: 500;
   color: #000000;
 }
 
 p {
-  font-size: 18px;
+  font-size: clamp(16px, 1.8vw, 18px);
   font-weight: 400;
   color: #000000;
 }
@@ -479,6 +479,9 @@ nav {
 
 .body-text-container {
   flex: 0.333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .padding-left-right {
@@ -1101,6 +1104,7 @@ nav {
   font-family: Space Grotesk, sans-serif;
   font-size: 20px;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 .footer-l3 {
@@ -1111,4 +1115,47 @@ nav {
 .footer-l3 a {
   text-decoration: underline;
 
+}
+
+
+  /* 1280px screen */
+@media screen and (max-width: 1280px) {
+
+  .request-quote {
+    padding: 16px 30px;
+  }
+  .front-page-left {
+    flex: 0.45;
+  }
+
+  .working-process-header {
+    width: 65%;
+  }
+
+  .services-box-left {
+    flex: 0.5;
+  }
+
+  .testimonials-header {
+    width: 68%;
+  }
+
+  .contact-us-header {
+    width: 50%;
+  }
+  .footer-l2-left {
+    width: 35%;
+  }
+  .footer-l2-right input {
+    width: 240px;
+  }
+
+  .green-button {
+    width: 210px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  
 }
