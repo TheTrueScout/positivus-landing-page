@@ -1,9 +1,14 @@
 body {
   font-family: Space Grotesk, sans-serif;
-  display: flex;
-  flex-direction: column;
-  padding: 30px 5% 0 5%;
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+.one-for-all {
+  display: flex;
+  padding: 30px 5% 0 5%;
+  flex-direction: column;
   box-sizing: border-box;
 }
 
@@ -1384,6 +1389,19 @@ nav {
     flex-direction: column;
   }
 
+  header {
+    margin-bottom: 40px;
+  }
+
+  .header-logo-container {
+    width: 80vw;
+  }
+
+  .header-logo-container img {
+    width: 144px;
+    height: auto;
+  }
+
   .front-page-right svg {
     position: absolute;
     width: 380px;
@@ -1595,6 +1613,7 @@ nav {
     flex-direction: column;
     text-align: center;
     width: 100%;
+    margin-bottom: 40px;
   }
 
   .team-items-row {
@@ -1703,6 +1722,7 @@ nav {
   .footer-container {
     border-radius: 0;
     width: 100vw;
+    padding: 50px 20px 30px 20px;
   }
 
   .footer-l1 {
