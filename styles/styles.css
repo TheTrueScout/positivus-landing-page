@@ -104,32 +104,6 @@ p {
   white-space: nowrap;
 }
 
-.nav-ani {
-  position: relative;
-}
-
-.header-nav a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.nav-ani::after {
-  content: '';
-  width: 0;
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  transition: 0.4s;
-}
-
-.nav-ani:hover::after {
-  width: 100%;
-}
-
 
 .black-button {
   display: flex;
@@ -159,19 +133,44 @@ header {
   width: 35%;
 }
 
-.header-nav {
-  width: 65%;
-}
-
 .mobile-header-nav {
   display: none;
 }
 
+
+
 .header-nav {
   display: flex;
   justify-content: space-between;
+  width: 65%;
   align-items: center;
   white-space: nowrap;
+}
+
+.nav-ani {
+  position: relative;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-ani::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: 0.4s;
+}
+
+.nav-ani:hover::after {
+  width: 100%;
 }
 
 .request-quote {
@@ -1394,20 +1393,15 @@ header {
     margin-top: 50px;
   }
 
-  header {
+  .mobile-header-nav {
     margin-bottom: 40px;
     justify-content: space-between;
+    display: flex;
+    position: relative;
   }
 
   header {
     display: none;
-  }
-
-
-
-  .mobile-header-nav {
-    display: flex;
-    position: relative;
   }
 
   .mobile-fpage-logo {
