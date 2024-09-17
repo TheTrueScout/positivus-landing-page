@@ -1497,7 +1497,7 @@ header {
 
   .sponsors img {
     width: max-content;
-    
+    filter: grayscale(0);
   }
 
   .services-items-row {
