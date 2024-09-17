@@ -1707,7 +1707,7 @@ header {
   }
 
   .mobile-header-nav {
-    margin-bottom: 40px;
+    margin-bottom: 0;
     justify-content: space-between;
     display: flex;
     position: relative;
@@ -1810,7 +1810,7 @@ header {
     position: absolute;
     width: 380px;
     height: auto;
-    top: 340px;
+    top: 300px;
     left: -50%;
     right: -50%;
     margin: 0 auto;
@@ -1824,6 +1824,7 @@ header {
   }
 
   .sponsors {
+    flex-direction: row;
     gap: 2rem;
     overflow: hidden;
     max-width: 90vw;
@@ -1886,10 +1887,13 @@ header {
   .services-items-row {
     flex-direction: column;
     height: 600px;
+    width: 100%;
   }
 
   .services-white-box {
     height: 280px;
+    width: 100%;
+    padding: 40px;
     flex: unset;
     box-sizing: border-box;
   }
@@ -1897,12 +1901,16 @@ header {
 
   .services-green-box {
     height: 280px;
+    width: 100%;
+    padding: 40px;
     flex: unset;
     box-sizing: border-box;
   }
 
   .services-black-box {
     height: 280px;
+    width: 100%;
+    padding: 40px;
     flex: unset;
     box-sizing: border-box;
   }
@@ -2116,6 +2124,7 @@ header {
 
   .contact-items-left-radio1 {
     justify-content: space-between;
+    padding: 0;
   }
 
   .contact-us-items-left {
